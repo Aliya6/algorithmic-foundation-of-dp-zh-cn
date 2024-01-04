@@ -28,7 +28,7 @@ Aliya6 @Aliya6
 
 因为原译者更新到第五章就停止更新了，我暂时无法联系到原译者，因此fork了该仓库并继续后续翻译工作，欢迎联系我并一同翻译讨论。源码存放于Github上，[https://github.com/doubleheiker/algorithmic-foundation-of-dp-zh-cn](https://github.com/doubleheiker/algorithmic-foundation-of-dp-zh-cn)。
 
-在前人的工作上继续翻译第5-13章的内容，希望能共同学习共同进步。.[https://github.com/Aliya6/algorithmic-foundation-of-dp-zh-cn](https://github.com/Aliya6/algorithmic-foundation-of-dp-zh-cn)
+在前人的工作上继续翻译第6-13章的内容，希望能共同学习共同进步。.[https://github.com/Aliya6/algorithmic-foundation-of-dp-zh-cn](https://github.com/Aliya6/algorithmic-foundation-of-dp-zh-cn)
 
 ## 欢迎建议指正或直接贡献翻译
 
