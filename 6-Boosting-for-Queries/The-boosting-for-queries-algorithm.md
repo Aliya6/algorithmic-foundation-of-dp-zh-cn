@@ -101,6 +101,10 @@ $$
 
 【证明】 在最后一轮提升中，我们有：
 
-$$\mathcal{D}_{T+1}[q]=u_{T,q}/Z_T$$
+   $$
+   \begin{align}
+   \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
+   \end{align}
+   $$
 
-由于$$a_{t,q} \leq a_{t,q}^+$$,我们有：
+由于$$a_{t,q} \leq a_{t,q}^+$$，我们有：
