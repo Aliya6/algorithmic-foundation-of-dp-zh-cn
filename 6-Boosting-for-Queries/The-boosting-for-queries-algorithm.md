@@ -27,7 +27,7 @@ $$
 考虑任意这样不满意的查询$$q$$。比例$$\mathcal{D}_2^{(x)}(q)/\mathcal{D}_2^{(y)}(q)$$由下式给出
 $$
 \begin{align}
-\frac{\mathcal{D}_2^{(x)}(q)}{\mathcal{D}_2^{(y)}(q)}&=\frac{\frac{\frac{e}{|\mathcal{Q}|}}{\frac{9}{10}\frac{1}{|\mathcal{Q}|}\frac{1}{e}+\frac{1}{10}\frac{e}{|\mathcal{Q}|}}}{\frac{1}{\mathcal{|Q|}}}\\
+   \frac{\mathcal{D}_2^{(x)}(q)}{\mathcal{D}_2^{(y)}(q)}&=\frac{\frac{\frac{e}{|\mathcal{Q}|}}{\frac{9}{10}\frac{1}      {|\mathcal{Q}|}\frac{1}{e}+\frac{1}{10}\frac{e}{|\mathcal{Q}|}}}{\frac{1}{\mathcal{|Q|}}}\\
 &=\frac{10}{1+\frac{9}{e^2}}\overset{def}{=}F\approx4.5085.
 \end{align}
 $$
@@ -67,7 +67,7 @@ $$
 1. 当用基于$$(k, \lambda, \eta, \beta)$$的大纲生成器实例化时，Boosting算法的输出以至少$$1-T\beta$$的概率对$$\mathcal{Q}$$中的所有查询给出$$(\lambda+\mu)$$精确的回答，其中：
    $$
    \begin{align}
-   \mu\in O(((\log^{3/2}|Q|)\sqrt k\sqrt{\log(1/\beta)}\rho)/(\varepsilon_{sample}\cdot\eta^3)).\tag{6.2}
+      \mu\in O(((\log^{3/2}|Q|)\sqrt k\sqrt{\log(1/\beta)}\rho)/(\varepsilon_{sample}\cdot\eta^3)).\tag{6.2}
    \end{align}
    $$
 
@@ -89,7 +89,7 @@ $$
    我们将使用$$a_{t,q}^-$$来降低基本生成器输出质量的下界。根据基本生成器的保证，对于$$\mathcal{D}_t$$质量的至少$$1/2+\eta$$部分，$$\mathcal{A}_t$$是$$\lambda-$$精确的。因此，
    $$
    \begin{align}
-   r_t\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}\mathcal{D}_t[q]\cdot a_{t,q}^-\geq(1/2+\eta)-(1/2-\eta)=2\eta.\tag{6.3}
+      r_t\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}\mathcal{D}_t[q]\cdot a_{t,q}^-\geq(1/2+\eta)-(1/2-\eta)=2\eta.\tag{6.3}
    \end{align}
    $$
 
@@ -102,12 +102,12 @@ $$
 【证明】 在最后一轮提升中，我们有：
    $$
    \begin{align}
-   \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
+      \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
    \end{align}
    $$
 由于$$a_{t,q} \leq a_{t,q}^+$$，我们有：
    $$
    \begin{align}
-   \u_{T,q}^+
+      \u_{T,q}^+
    \end{align}
    $$
