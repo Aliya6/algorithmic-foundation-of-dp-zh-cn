@@ -103,7 +103,7 @@ $$
 
    $$
    \begin{align}
-   \mathcal{D}_{T+1}[q]=u_{T,q}/ Z_T
+   \mathcal{D}_{T+1}[q]=u_{T,q}/{Z_T}
    \end{align}
    $$
 
