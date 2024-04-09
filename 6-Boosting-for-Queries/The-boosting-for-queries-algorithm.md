@@ -101,13 +101,13 @@ $$
 
 【证明】 在最后一轮提升中，我们有：
    $$
-   \begin{align}
-   \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
-   \end{align}
+   \begin{aligned}
+      \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
+   \end{aligned}
    $$
 由于$$a_{t,q} \leq a_{t,q}^+$$，我们有：
    $$
-   \begin{align}
-   \u_{T,q}^+\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}
-   \end{align}
+   \begin{aligned}
+      \u_{T,q}^+\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}
+   \end{aligned}
    $$
