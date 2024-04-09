@@ -100,13 +100,14 @@ $$
 **引理 6.2.** 经过$$T$$轮提升后，除了$$T\beta$$的概率下，除了$$exp(-\eta^{2}T)$$大小的查询部分之外的所有答案都是$$(\lambda+\mu)$$-精确的。
 
 【证明】 在最后一轮提升中，我们有：
-
    $$
    \begin{align}
-   
    \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
-   
    \end{align}
    $$
-
 由于$$a_{t,q} \leq a_{t,q}^+$$，我们有：
+   $$
+   \begin{align}
+   \u_{T,q}^+
+   \end{align}
+   $$
