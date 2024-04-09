@@ -26,10 +26,10 @@ $$
 $$
 考虑任意这样不满意的查询$$q$$。比例$$\mathcal{D}_2^{(x)}(q)/\mathcal{D}_2^{(y)}(q)$$由下式给出
 $$
-\begin{align}
+\begin{aligned}
 \frac{\mathcal{D}_2^{(x)}(q)}{\mathcal{D}_2^{(y)}(q)}&=\frac{\frac{\frac{e}{|\mathcal{Q}|}}{\frac{9}{10}\frac{1}      {|\mathcal{Q}|}\frac{1}{e}+\frac{1}{10}\frac{e}{|\mathcal{Q}|}}}{\frac{1}{\mathcal{|Q|}}}\\
 &=\frac{10}{1+\frac{9}{e^2}}\overset{def}{=}F\approx4.5085.
-\end{align}
+\end{aligned}
 $$
 现在，$$\ln F \approx 1.506$$，即使基本生成器在第2轮中使用的查询选择没有明确公开，它们可能可以从公开的结果$$\mathcal{A}_2$$中检测到。因此，每个查询存在高达1.506的潜在隐私损失（当然，我们期望取消；我们只是试图解释困难的根源）。通过确保基本生成器所使用的样本数量相对较小，可以部分地解决这一问题，尽管我们仍然存在这样的问题，即在多次迭代中，即使在相邻数据库上，分布$$\mathcal{D}_t$$也可能非常不同地演化。
 
@@ -88,9 +88,9 @@ $$
 
    我们将使用$$a_{t,q}^-$$来降低基本生成器输出质量的下界。根据基本生成器的保证，对于$$\mathcal{D}_t$$质量的至少$$1/2+\eta$$部分，$$\mathcal{A}_t$$是$$\lambda-$$精确的。因此，
    $$
-   \begin{align}
+   \begin{aligned}
    r_t\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}\mathcal{D}_t[q]\cdot a_{t,q}^-\geq(1/2+\eta)-(1/2-\eta)=2\eta.\qquad \qquad(6.3)
-   \end{align}
+   \end{aligned}
    $$
 
 2. 如果$$\mathcal{A}_t$$在$$q$$上是$$(\lambda+\mu)-$$精确的，$$a_{t,q}^+$$是-1，否则是1。要检查$$a_{t,q}\leq a_{t,q}^+$$，请注意如果$$a_{t,q}^{+}=-1$$，则$$\mathcal{A}_t$$对$$q$$是$$(\lambda+\mu)-$$不精确的，因此根据定义$$a_{t,q}=-1$$。相反，如果我们有$$a_{t,q}^{+}=1$$，那么因此我们总是有$$a_{t,q}\in[-1,1]$$。
@@ -122,16 +122,16 @@ $$
 
 根据我们对$$\sum_{t=1}^{T}a_{t,q}^+$$符号意义的讨论，我们有：
 $$
-\begin{align}
+\begin{aligned}
 \mathcal{A}对q来说是(\lambda+\mu)-不准确的 \Rightarrow \sum_{t=1}^{T}a_{t,q}^+ \leq 0\\
 &\Leftrightarrow e^{-\alpha\sum_{t=1}^{T}a_{t,q}^+} \geq 1\\
 &\Leftrightarrow u_{T,q}^+ \geq 1
-\end{align}
+\end{aligned}
 $$
 由于$$u_{T,q}^+ \geq 0$$，我们的结论是：
 $$
-\begin{align}
+\begin{aligned}
 \llbracket\mathcal{A}对q来说是(\lambda+\mu)-不准确的\rrbracket \leq u_{T,q}^+
-\end{align}
+\end{aligned}
 $$
 将其与方程(6.6)一起使用可得出：
