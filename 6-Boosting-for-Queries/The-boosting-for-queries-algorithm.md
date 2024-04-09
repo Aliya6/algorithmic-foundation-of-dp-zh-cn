@@ -122,11 +122,11 @@ $$
 
 根据我们对$$\sum_{t=1}^{T}a_{t,q}^+$$符号意义的讨论，我们有：
 $$
-\begin{aligned}
+\begin{alignat}
 \mathcal{A}对q来说是(\lambda+\mu)-不准确的 \Rightarrow \sum_{t=1}^{T}a_{t,q}^+ \leq 0\\
 &\Leftrightarrow e^{-\alpha\sum_{t=1}^{T}a_{t,q}^+} \geq 1\\
 &\Leftrightarrow u_{T,q}^+ \geq 1
-\end{aligned}
+\end{alignat}
 $$
 由于$$u_{T,q}^+ \geq 0$$，我们的结论是：
 $$
