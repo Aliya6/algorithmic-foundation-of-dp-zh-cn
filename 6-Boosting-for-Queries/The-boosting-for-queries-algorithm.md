@@ -6,9 +6,9 @@
 
 **定义 6.1**（$$(k,\lambda,\eta,\beta)-$$基本大纲生成器）对于固定的数据库大小$n$，数据域$$\mathcal{X}$$和查询集$$\mathcal{Q}$$，考虑大纲生成器$$\mathcal{M}$$，其独立地从$$\mathcal{Q}$$上的分布$$\mathcal{D}$$对$$k$$个查询进行采样并输出大纲。我们称$$\mathcal{M}$$是一个$$(k,\lambda,\eta,\beta)-$$基本大纲生成器，如果对于任何$$\mathcal{Q}$$上的分布$$\mathcal{D}$$，除了$$\beta$$概率之外，所有$$\mathcal{M}$$的硬币翻转，$$\mathcal{M}$$输出的大纲$$\mathcal{S}$$对于由$$\mathcal{D}$$加权的$$\mathcal{Q}$$的$$1/2+\eta$$质量分数是$$\lambda-$$精确的：
 $$
-\begin{align}
-\underset{q\sim\mathcal{D}}{\text{Pr}}[|q(\mathcal{S})-q(x)|\leq\lambda]\geq1/2+\eta.\tag{6.1}
-\end{align}
+\begin{aligned}
+   \underset{q\sim\mathcal{D}}{\text{Pr}}[|q(\mathcal{S})-q(x)|\leq\lambda]\geq1/2+\eta.\tag{6.1}
+\end{aligned}
 $$
 查询增强算法可用于任何类别的查询和任何不同的私有基本大纲生成器。 运行时间继承自基本大纲生成器。Booster在$$|\mathcal{Q}|$$中投入了准线性的额外时间，特别是其运行时间并不直接依赖于数据域的大小。
 
@@ -26,10 +26,10 @@ $$
 $$
 考虑任意这样不满意的查询$$q$$。比例$$\mathcal{D}_2^{(x)}(q)/\mathcal{D}_2^{(y)}(q)$$由下式给出
 $$
-\begin{align}
+\begin{aligned}
 \frac{\mathcal{D}_2^{(x)}(q)}{\mathcal{D}_2^{(y)}(q)}&=\frac{\frac{\frac{e}{|\mathcal{Q}|}}{\frac{9}{10}\frac{1}      {|\mathcal{Q}|}\frac{1}{e}+\frac{1}{10}\frac{e}{|\mathcal{Q}|}}}{\frac{1}{\mathcal{|Q|}}}\\
 &=\frac{10}{1+\frac{9}{e^2}}\overset{def}{=}F\approx4.5085.
-\end{align}
+\end{aligned}
 $$
 现在，$$\ln F \approx 1.506$$，即使基本生成器在第2轮中使用的查询选择没有明确公开，它们可能可以从公开的结果$$\mathcal{A}_2$$中检测到。因此，每个查询存在高达1.506的潜在隐私损失（当然，我们期望取消；我们只是试图解释困难的根源）。通过确保基本生成器所使用的样本数量相对较小，可以部分地解决这一问题，尽管我们仍然存在这样的问题，即在多次迭代中，即使在相邻数据库上，分布$$\mathcal{D}_t$$也可能非常不同地演化。
 
@@ -66,9 +66,9 @@ $$
 
 1. 当用基于$$(k, \lambda, \eta, \beta)$$的大纲生成器实例化时，Boosting算法的输出以至少$$1-T\beta$$的概率对$$\mathcal{Q}$$中的所有查询给出$$(\lambda+\mu)$$精确的回答，其中：
    $$
-   \begin{align}
+   \begin{aligned}
    \mu\in O(((\log^{3/2}|Q|)\sqrt k\sqrt{\log(1/\beta)}\rho)/(\varepsilon_{sample}\cdot\eta^3)).\tag{6.2}
-   \end{align}
+   \end{aligned}
    $$
 
 2. 如果基本大纲生成器是$$(\varepsilon_{base},\delta_{base})-$$差分隐私，则boosting算法是$$(\varepsilon_{sample}+T\cdot\varepsilon_{base},\delta_{sample}+T\delta_{base})-$$差分隐私的
@@ -88,9 +88,9 @@ $$
 
    我们将使用$$a_{t,q}^-$$来降低基本生成器输出质量的下界。根据基本生成器的保证，对于$$\mathcal{D}_t$$质量的至少$$1/2+\eta$$部分，$$\mathcal{A}_t$$是$$\lambda-$$精确的。因此，
    $$
-   \begin{align}
+   \begin{aligned}
    r_t\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}\mathcal{D}_t[q]\cdot a_{t,q}^-\geq(1/2+\eta)-(1/2-\eta)=2\eta.\tag{6.3}
-   \end{align}
+   \end{aligned}
    $$
 
 2. 如果$$\mathcal{A}_t$$在$$q$$上是$$(\lambda+\mu)-$$精确的，$$a_{t,q}^+$$是-1，否则是1。要检查$$a_{t,q}\leq a_{t,q}^+$$，请注意如果$$a_{t,q}^{+}=-1$$，则$$\mathcal{A}_t$$对$$q$$是$$(\lambda+\mu)-$$不精确的，因此根据定义$$a_{t,q}=-1$$。相反，如果我们有$$a_{t,q}^{+}=1$$，那么因此我们总是有$$a_{t,q}\in[-1,1]$$。
