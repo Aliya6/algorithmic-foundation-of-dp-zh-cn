@@ -7,7 +7,7 @@
 **定义 6.1**（$$(k,\lambda,\eta,\beta)-$$基本大纲生成器）对于固定的数据库大小$n$，数据域$$\mathcal{X}$$和查询集$$\mathcal{Q}$$，考虑大纲生成器$$\mathcal{M}$$，其独立地从$$\mathcal{Q}$$上的分布$$\mathcal{D}$$对$$k$$个查询进行采样并输出大纲。我们称$$\mathcal{M}$$是一个$$(k,\lambda,\eta,\beta)-$$基本大纲生成器，如果对于任何$$\mathcal{Q}$$上的分布$$\mathcal{D}$$，除了$$\beta$$概率之外，所有$$\mathcal{M}$$的硬币翻转，$$\mathcal{M}$$输出的大纲$$\mathcal{S}$$对于由$$\mathcal{D}$$加权的$$\mathcal{Q}$$的$$1/2+\eta$$质量分数是$$\lambda-$$精确的：
 $$
 \begin{aligned}
-   \underset{q\sim\mathcal{D}}{\text{Pr}}[|q(\mathcal{S})-q(x)|\leq\lambda]\geq1/2+\eta.\tag{6.1}
+   \underset{q\sim\mathcal{D}}{\text{Pr}}[|q(\mathcal{S})-q(x)|\leq\lambda]\geq1/2+\eta.\qquad \qquad (6.1)
 \end{aligned}
 $$
 查询增强算法可用于任何类别的查询和任何不同的私有基本大纲生成器。 运行时间继承自基本大纲生成器。Booster在$$|\mathcal{Q}|$$中投入了准线性的额外时间，特别是其运行时间并不直接依赖于数据域的大小。
@@ -67,7 +67,7 @@ $$
 1. 当用基于$$(k, \lambda, \eta, \beta)$$的大纲生成器实例化时，Boosting算法的输出以至少$$1-T\beta$$的概率对$$\mathcal{Q}$$中的所有查询给出$$(\lambda+\mu)$$精确的回答，其中：
    $$
    \begin{aligned}
-   \mu\in O(((\log^{3/2}|Q|)\sqrt k\sqrt{\log(1/\beta)}\rho)/(\varepsilon_{sample}\cdot\eta^3)).\tag{6.2}
+   \mu\in O(((\log^{3/2}|Q|)\sqrt k\sqrt{\log(1/\beta)}\rho)/(\varepsilon_{sample}\cdot\eta^3)).\qquad \qquad(6.2)
    \end{aligned}
    $$
 
@@ -89,7 +89,7 @@ $$
    我们将使用$$a_{t,q}^-$$来降低基本生成器输出质量的下界。根据基本生成器的保证，对于$$\mathcal{D}_t$$质量的至少$$1/2+\eta$$部分，$$\mathcal{A}_t$$是$$\lambda-$$精确的。因此，
    $$
    \begin{aligned}
-   r_t\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}\mathcal{D}_t[q]\cdot a_{t,q}^-\geq(1/2+\eta)-(1/2-\eta)=2\eta.\tag{6.3}
+   r_t\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}\mathcal{D}_t[q]\cdot a_{t,q}^-\geq(1/2+\eta)-(1/2-\eta)=2\eta.\qquad \qquad(6.3)
    \end{aligned}
    $$
 
