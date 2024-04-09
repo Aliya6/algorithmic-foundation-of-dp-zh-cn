@@ -102,12 +102,20 @@ $$
 【证明】 在最后一轮提升中，我们有：
    $$
    \begin{aligned}
-      \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T
+      \mathcal{D}_{T+1}[q]=u_{T,q}/Z_T \qquad \qquad(6.4)
    \end{aligned}
    $$
 由于$$a_{t,q} \leq a_{t,q}^+$$，我们有：
    $$
    \begin{aligned}
-      \u_{T,q}^+\overset{\Delta}{=}\sum_{q\in\mathcal{Q}}
+      u_{T,q}^+\overset{\Delta}{=}e^{-\alpha\sum_{t=1}^{T}a_{t,q}^+} \leq e^{-\alpha\sum_{t=1}^{T}a_{t,q}} = u_{T,q} \qquad \qquad(6.5)
    \end{aligned}
    $$
+
+（上标“+”提醒我们这个未加权的值是使用术语$$a_{t,q}^+$$计算的。）注意，我们总是有$$u_{T,q}^+ \geq 0$$。结合方程(6.4)和(6.5)，对于所有$$q \in Q$$：
+$$
+   \begin{aligned}
+      \mathcal{D}_{T+1}[q] \geq u_{T,q}^+/Z_T \qquad \qquad(6.6)
+   \end{aligned}
+$$
+回想一下，$$\llbracket P \rrbracket$$表示当且仅当谓词$$P$$为真时值为1的布尔变量，我们转而检查值$$\llbracket\mathcal{A}对q来说是(\lambda+\mu)-不准确的\rrbracket$$。如果该谓词为 1，则大多数 {Aj}jT=1 的情况一定是 (λ + μ) 不准确，否则它们的中值将是 (λ + μ) 准确。
