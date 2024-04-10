@@ -137,8 +137,8 @@ $$
 将其与方程(6.6)一起使用可得出：
 $$
 \begin{aligned}
-\frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}} \llbracket \mathcal{A}对q来说是(\lambda+\mu)-不准确的 \rrbracket &\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}u_{T,q}^+\\
-&\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}\mathcal{D}_{T+1}[q]\cdotZ_T
+\frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}} \llbracket\mathcal{A}对q来说是(\lambda+\mu)-不准确的\rrbracket &\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}u_{T,q}^+\\
+&\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}\mathcal{D}_{T+1}[q]\cdotZ_T\\
 &=Z_T/|\mathcal{Q}|.
 \end{aligned}
 $$
