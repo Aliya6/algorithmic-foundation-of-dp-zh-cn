@@ -138,8 +138,8 @@ $$
 $$
 \begin{aligned}
 \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}} \llbracket\mathcal{A}对q来说是(\lambda+\mu)-不准确的\rrbracket &\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}u_{T,q}^+\\
-&\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}\mathcal{D}_{T+1}[q]\cdotZ_T\\
-&=Z_T/|\mathcal{Q}|.
+&\leq \frac{1}{|\mathcal{Q}|} \cdot \sum_{q \in \mathcal{Q}}\mathcal{D}_{T+1}[q] \cdot Z_T\\
+&=\frac{Z_T}{|\mathcal{Q}|}.
 \end{aligned}
 $$
 因此，以下断言完成了证明：
