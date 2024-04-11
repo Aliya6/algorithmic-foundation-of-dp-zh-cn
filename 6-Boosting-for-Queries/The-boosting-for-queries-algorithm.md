@@ -163,3 +163,22 @@ Z_t&=\sum_{q \in \mathcal{Q}}u_{t,q}\\
 &\leq \frac{Z_{t-1}}{2}[(e^{\alpha}+e^{-\alpha})+2\eta(e^{-\alpha}-e^{\alpha})] \quad (r_t \geq 2\eta 和 (e^{-\alpha}-e^{\alpha}) \leq 0)
 \end{aligned}
 $$
+通过简单的微积分，我们可以看到 $$(e^{\alpha}+e^{-\alpha})+2\eta(e^{-\alpha}-e^{\alpha})$$在以下情况下最小化：
+$$
+\begin{aligned}
+\alpha=(1/2)ln(\frac{1+2\eta}{1-2\eta}).
+\end{aligned}
+$$
+将其代入递归式，我们得到：
+$$
+\begin{aligned}
+Z_t \leq (\sqrt{1-4\eta^2})^t|\mathcal{Q}| \leq exp(-2\eta^2t)|\mathcal{Q}|.
+\end{aligned}
+$$
+    这就完成了引理6.2的证明。该引理意味着所有查询的精确度可以同时实现，通过设置：
+$$
+\begin{aligned}
+T ＞ \frac{ln|mathcal{Q}|}{\eta^2}.
+\end{aligned}
+$$
+**隐私** 我们将证明整个序列$$(S_1,\mathcal{A}_1,...,S_T,\mathcal{A}_T)$$可以在保留差分隐私的同时输出。请注意，这比我们需要的要强——我们实际上并不输出集合$$S_1,...,S_T$$。根据我们的自适应组合定理，每个$$\mathcal{A}_i$$的隐私将由基本概要生成器的隐私保证以及 Si−1 以差分隐私方式计算的事实来保证。因此，只要证明(S1,A1,...,Si,Ai)是差分私有的，Si+1也是差分私有的。然后，我们可以使用组合定理组合隐私参数来计算最终保证。
