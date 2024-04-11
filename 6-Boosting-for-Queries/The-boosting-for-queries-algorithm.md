@@ -1,6 +1,6 @@
 # 查询算法的Boosting
 
-我们将使用第[2](/2-Basic-Terms/Overview.html)节中概述的数据库的*行表示*，其中我们将数据库视为行的多重集或$$\mathcal{X}$$的元素。固定数据库大小$$n$$、数据域$$\mathcal{X}$$和敏感度最大为$$\rho$$的实值查询的查询集$$\mathcal{Q}={q:\mathcal{X}^*→\mathbb{R}}$$。
+我们将使用第[2](/2-Basic-Terms/Overview.md)节中概述的数据库的*行表示*，其中我们将数据库视为行的多重集或$$\mathcal{X}$$的元素。固定数据库大小$$n$$、数据域$$\mathcal{X}$$和敏感度最大为$$\rho$$的实值查询的查询集$$\mathcal{Q}={q:\mathcal{X}^*→\mathbb{R}}$$。
 
 我们假设存在一个基本大纲生成器（在第[6.2](/6-Boosting-for-Queries/Base-synopsis-generators/A-generalization-bound.html)节中，我们将看到如何构造这些）。接下来，我们需要的基本生成器的性质是，对于查询集$$\mathcal{Q}$$上的任何分布$$\mathcal{D}$$，基本生成器的输出都可以用于计算大部分查询的准确答案，其中 “大分数” 是根据$$\mathcal{D}$$给出的权重定义的。基生成器由$$k$$参数化，即要采样的查询数；$$\lambda$$是输出的精度要求；$$\eta$$是对“大”的度量，描述了大部分查询的含义，$$\beta$$是失败概率。
 
