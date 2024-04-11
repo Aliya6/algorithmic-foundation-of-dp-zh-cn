@@ -149,7 +149,9 @@ $$
 Z_t \leq exp(-\eta^2\cdot t) \cdot |\mathcal{Q}|
 \end{aligned}
 $$
+
 【证明】根据基本概要生成器的定义，除了$$\beta$$概率外，生成的概要对于分布$$\mathcal{D}_t$$质量的至少$$(1/2 + \eta)$$部分来说是$$\lambda$$-准确的。回想一下，$$a_{t,q}^- \in {-1,1}$$为1当且仅当$$\mathcal{A}_t$$在$$q$$上是$$\lambda$$-准确的，并且$$a_{t,q}^- \leq a_{t,q}$$并进一步回想数量$$r_t\overset{\Delta}{=}\sum_{q \in \mathcal{Q}}\mathcal{D}_t[q] \cdot a_{t,q}^-$$定义在方程（6.3）中。如上所述，$$r_t$$衡量第$$t$$轮基本概要生成器的“成功”，其中“成功”是指更严格的$$\lambda$$-准确概念。正如方程（6.3）所总结的，如果以$$\lambda$$-准确计算$$\mathcal{D}_t$$质量的$$(1/2 + \eta)$$部分，则$$r_t \geq 2\eta$$。现在还观察对于$$t \in [T]$$，假设基本处理器在第$$t$$轮中没有失败：
+
 $$
 \begin{aligned}
 Z_t&=\sum_{q \in \mathcal{Q}}u_{t,q}\\
