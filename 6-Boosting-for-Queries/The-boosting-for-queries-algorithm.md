@@ -175,7 +175,7 @@ $$
 Z_t \leq (\sqrt{1-4\eta^2})^t|\mathcal{Q}| \leq exp(-2\eta^2t)|\mathcal{Q}|.
 \end{aligned}
 $$
-    这就完成了引理6.2的证明。该引理意味着所有查询的精确度可以同时实现，通过设置：
+这就完成了引理6.2的证明。该引理意味着所有查询的精确度可以同时实现，通过设置：
 $$
 \begin{aligned}
 T ＞ \frac{ln|\mathcal{Q}|}{\eta^2}.
