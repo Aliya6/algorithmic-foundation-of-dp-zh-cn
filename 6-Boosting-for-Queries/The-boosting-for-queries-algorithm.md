@@ -209,6 +209,17 @@ $$
 \end{aligned}
 $$
 
-我们总的隐私损失来自于对基本清洗器的 T 次调用的组成以及 kT 个样本的累积损失。我们得出结论，整个 boosting 算法是： (εboost, δboost) 差分私有的，其中
+我们总的隐私损失来自于对基本清洗器的$$T$$次调用的组成以及$$kT$$个样本的累积损失。我们得出结论，整个提升算法是：$$(\epsilon_{boost}, \delta_{boost})$$-差分私有的，其中
+$$
+\begin{aligned}
+&\epsilon_{boost}=T\epsilon_{base}+\epsilon_{sample}\\
+&\delta_{boost}=T\delta_{base}+\delta_{sample}
+\end{aligned}
+$$
 
 要获取定理陈述中声明的参数，我们可以采用：
+$$
+\begin{aligned}
+\mu \in O((T^{3/2}\sqrt{k}\sqrt{log(1/\beta)}\alpha \rho)/\epsilon_{sample}). \qquad \qquad (6.8)
+\end{aligned}
+$$
