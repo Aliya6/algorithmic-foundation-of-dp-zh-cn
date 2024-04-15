@@ -20,7 +20,7 @@ $$
 对$$y$$的所有$$2^m$$个可能选择进行并集，存在$$m$$位概要$$y$$，对于$$S$$中除分数权重为$$(log(1/\beta)+m)/(a \cdot m)$$一部分的所有查询都是准确的，其概率至多为$$\gamma$$。令$$ k = am = |S|$$我们看到充分得到
 $$
 \begin{aligned}
-a > \frac{2(log(1/\gamma) + m)}{ m \cdot (1 − 2\eta)}$$. \qquad \qquad (6.9) 
+a > \frac{2(log(1/\gamma) + m)}{ m \cdot (1 − 2\eta)}. \qquad \qquad (6.9) 
 \end{aligned}
 $$
 
